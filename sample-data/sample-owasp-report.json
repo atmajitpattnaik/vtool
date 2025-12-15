@@ -1,0 +1,233 @@
+{
+    "reportSchema": "1.1",
+    "scanInfo": {
+        "engineVersion": "8.4.0",
+        "analysisTimestamp": "2024-12-09T10:30:00Z",
+        "dataSource": [
+            {
+                "name": "NVD CVE",
+                "timestamp": "2024-12-08T00:00:00Z"
+            }
+        ]
+    },
+    "projectInfo": {
+        "name": "sample-web-application",
+        "version": "1.0.0"
+    },
+    "dependencies": [
+        {
+            "fileName": "lodash-4.17.20.tgz",
+            "filePath": "node_modules/lodash",
+            "name": "lodash",
+            "version": "4.17.20",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2021-23337",
+                    "description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+                    "cvssv3": {
+                        "baseScore": 7.2,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "HIGH",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*"
+                    ]
+                },
+                {
+                    "name": "CVE-2020-8203",
+                    "description": "Prototype pollution in lodash before 4.17.19 allows attackers to modify Object.prototype.",
+                    "cvssv3": {
+                        "baseScore": 7.4,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "HIGH"
+                    },
+                    "severity": "HIGH",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8203"
+                        }
+                    ],
+                    "vulnerableSoftware": [
+                        "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*"
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "axios-0.21.0.tgz",
+            "filePath": "node_modules/axios",
+            "name": "axios",
+            "version": "0.21.0",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2021-3749",
+                    "description": "axios before 0.21.2 allows Server-Side Request Forgery (SSRF) via crafted URLs.",
+                    "cvssv3": {
+                        "baseScore": 7.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "HIGH",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3749"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "minimist-1.2.5.tgz",
+            "filePath": "node_modules/minimist",
+            "name": "minimist",
+            "version": "1.2.5",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2021-44906",
+                    "description": "Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey()",
+                    "cvssv3": {
+                        "baseScore": 9.8,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "CRITICAL",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44906"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "express-4.17.1.tgz",
+            "filePath": "node_modules/express",
+            "name": "express",
+            "version": "4.17.1",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2022-24999",
+                    "description": "Express before 4.17.3 allows open redirect attacks via the res.redirect function.",
+                    "cvssv3": {
+                        "baseScore": 5.3,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "MEDIUM",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24999"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "jest-27.0.0.tgz",
+            "filePath": "node_modules/jest",
+            "name": "jest",
+            "version": "27.0.0",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2022-1234",
+                    "description": "Jest testing framework has a potential security issue in snapshot handling.",
+                    "cvssv3": {
+                        "baseScore": 4.0,
+                        "attackVector": "LOCAL",
+                        "attackComplexity": "HIGH"
+                    },
+                    "severity": "MEDIUM",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1234"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "eslint-8.0.0.tgz",
+            "filePath": "node_modules/eslint",
+            "name": "eslint",
+            "version": "8.0.0",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2023-5678",
+                    "description": "ESLint has a potential ReDoS vulnerability in certain regex patterns.",
+                    "cvssv3": {
+                        "baseScore": 3.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "HIGH"
+                    },
+                    "severity": "LOW",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-5678"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "old-crypto-lib-1.0.0.tgz",
+            "filePath": "node_modules/some-package/node_modules/old-crypto-lib",
+            "name": "old-crypto-lib",
+            "version": "1.0.0",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2020-9999",
+                    "description": "Weak cryptographic algorithm used in old-crypto-lib.",
+                    "cvssv3": {
+                        "baseScore": 6.5,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "MEDIUM",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-9999"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fileName": "debug-4.3.1.tgz",
+            "filePath": "node_modules/debug",
+            "name": "debug",
+            "version": "4.3.1",
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2017-16137",
+                    "description": "The debug module is vulnerable to regular expression denial of service.",
+                    "cvssv3": {
+                        "baseScore": 5.3,
+                        "attackVector": "NETWORK",
+                        "attackComplexity": "LOW"
+                    },
+                    "severity": "MEDIUM",
+                    "references": [
+                        {
+                            "source": "NVD",
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-16137"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

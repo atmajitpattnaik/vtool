@@ -1,0 +1,21 @@
+{
+    "name": "sample-web-application",
+    "version": "1.0.0",
+    "description": "A sample web application for testing vulnerability analysis",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "axios": "^1.6.0",
+        "express": "^4.18.2",
+        "debug": "^4.3.4"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "eslint": "^8.55.0"
+    }
+}
