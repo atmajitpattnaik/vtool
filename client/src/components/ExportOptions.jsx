@@ -91,34 +91,35 @@ function ExportOptions({ analysis, report }) {
         const { false_positives, true_vulnerabilities, summary, metadata } = analysis
 
         const styles = forPdf ? `
-      body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
-      h1 { color: #1a1a2e; border-bottom: 2px solid #8b5cf6; padding-bottom: 10px; }
-      h2 { color: #8b5cf6; margin-top: 30px; }
-      table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-      th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-      th { background: #f5f5f5; }
-      .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; }
-      .critical { background: #fee2e2; color: #dc2626; }
-      .high { background: #ffedd5; color: #ea580c; }
-      .medium { background: #fef9c3; color: #ca8a04; }
-      .low { background: #dcfce7; color: #16a34a; }
-      .stat-box { display: inline-block; padding: 15px 25px; margin: 5px; background: #f5f5f5; border-radius: 8px; text-align: center; }
-      .stat-number { font-size: 28px; font-weight: bold; }
+      body { font-family: Arial, sans-serif; color: #025064; line-height: 1.6; background: #EEF2F5; padding: 24px; }
+      h1 { color: #025064; border-bottom: 2px solid #317D9B; padding-bottom: 10px; }
+      h2 { color: #317D9B; margin-top: 30px; }
+      table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #EEF2F5; }
+      th, td { border: 1px solid rgba(2, 80, 100, 0.18); padding: 10px; text-align: left; color: #025064; }
+      th { background: rgba(49, 125, 155, 0.08); }
+      .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; color: #025064; background: rgba(2, 80, 100, 0.12); }
+      .critical { background: rgba(2, 80, 100, 0.12); color: #025064; }
+      .high { background: rgba(49, 125, 155, 0.12); color: #317D9B; }
+      .medium { background: rgba(2, 80, 100, 0.08); color: #025064; }
+      .low { background: rgba(49, 125, 155, 0.08); color: #317D9B; }
+      .stat-box { display: inline-block; padding: 15px 25px; margin: 5px; background: #EEF2F5; border-radius: 8px; text-align: center; border: 1px solid rgba(2, 80, 100, 0.18); }
+      .stat-number { font-size: 28px; font-weight: bold; color: #025064; }
+      a { color: #317D9B; }
     ` : `
-      body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #f4f4f5; padding: 40px; line-height: 1.6; }
-      h1 { color: #f4f4f5; border-bottom: 2px solid #8b5cf6; padding-bottom: 10px; }
-      h2 { color: #8b5cf6; margin-top: 30px; }
-      table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #16161f; }
-      th, td { border: 1px solid #2a2a35; padding: 12px; text-align: left; }
-      th { background: #1a1a25; color: #a1a1aa; }
-      .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-      .critical { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
-      .high { background: rgba(249, 115, 22, 0.15); color: #f97316; }
-      .medium { background: rgba(234, 179, 8, 0.15); color: #eab308; }
-      .low { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
-      .stat-box { display: inline-block; padding: 20px 30px; margin: 8px; background: #16161f; border: 1px solid #2a2a35; border-radius: 12px; text-align: center; }
-      .stat-number { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #f4f4f5, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-      a { color: #06b6d4; }
+      body { font-family: 'Inter', sans-serif; background: #EEF2F5; color: #025064; padding: 40px; line-height: 1.6; }
+      h1 { color: #025064; border-bottom: 2px solid #317D9B; padding-bottom: 10px; }
+      h2 { color: #317D9B; margin-top: 30px; }
+      table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #EEF2F5; }
+      th, td { border: 1px solid rgba(2, 80, 100, 0.18); padding: 12px; text-align: left; color: #025064; }
+      th { background: rgba(49, 125, 155, 0.08); color: #025064; }
+      .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #025064; background: rgba(2, 80, 100, 0.12); }
+      .critical { background: rgba(2, 80, 100, 0.12); color: #025064; }
+      .high { background: rgba(49, 125, 155, 0.12); color: #317D9B; }
+      .medium { background: rgba(2, 80, 100, 0.08); color: #025064; }
+      .low { background: rgba(49, 125, 155, 0.08); color: #317D9B; }
+      .stat-box { display: inline-block; padding: 20px 30px; margin: 8px; background: #EEF2F5; border: 1px solid rgba(2, 80, 100, 0.18); border-radius: 12px; text-align: center; }
+      .stat-number { font-size: 32px; font-weight: bold; color: #025064; }
+      a { color: #317D9B; }
     `
 
         return `
@@ -144,11 +145,11 @@ function ExportOptions({ analysis, report }) {
       <div>Total Scanned</div>
     </div>
     <div class="stat-box">
-      <div class="stat-number" style="color: #22c55e;">${false_positives?.length || 0}</div>
+      <div class="stat-number" style="color: #317D9B;">${false_positives?.length || 0}</div>
       <div>False Positives</div>
     </div>
     <div class="stat-box">
-      <div class="stat-number" style="color: #f97316;">${true_vulnerabilities?.length || 0}</div>
+      <div class="stat-number" style="color: #025064;">${true_vulnerabilities?.length || 0}</div>
       <div>True Vulnerabilities</div>
     </div>
   </div>
@@ -208,8 +209,8 @@ function ExportOptions({ analysis, report }) {
   <div style="white-space: pre-wrap;">${report.content}</div>
   ` : ''}
   
-  <hr style="margin-top: 40px; border-color: #2a2a35;">
-  <p style="color: #71717a; font-size: 12px;">
+  <hr style="margin-top: 40px; border-color: rgba(2, 80, 100, 0.18);">
+  <p style="color: rgba(2, 80, 100, 0.65); font-size: 12px;">
     Generated by VulnShield v1.0.0 • Automated Vulnerability Noise Reduction & Reporting System
   </p>
 </body>
