@@ -174,24 +174,6 @@ function FileUpload({ files, onFileChange }) {
                             <li>Generate an AI-powered report with remediation steps</li>
                         </ol>
                     </div>
-                    <div style={{ flex: 1, minWidth: '250px' }}>
-                        <h3 style={{ marginBottom: '0.75rem', color: 'var(--accent-secondary)' }}>
-                            ⚡ Features
-                        </h3>
-                        <ul style={{
-                            listStyle: 'none',
-                            color: 'var(--text-secondary)',
-                            fontSize: '0.9rem',
-                            lineHeight: '1.8'
-                        }}>
-                            <li>✓ Version mismatch detection</li>
-                            <li>✓ Dev-only dependency filtering</li>
-                            <li>✓ Transitive dependency analysis</li>
-                            <li>✓ Severity prioritization (CVSS-based)</li>
-                            <li>✓ AI-generated remediation guidance</li>
-                            <li>✓ Export to PDF/HTML/JSON</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

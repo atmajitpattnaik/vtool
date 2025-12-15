@@ -125,8 +125,8 @@ function App() {
                     <div className="logo">
                         <div className="logo-icon">🛡️</div>
                         <div>
-                            <div className="logo-text">VulnShield</div>
-                            <div className="header-subtitle">Vulnerability Noise Reduction System</div>
+                            <div className="logo-text">OWASP Report Analysis</div>
+                            <div className="header-subtitle">False Positive detector</div>
                         </div>
                     </div>
                     {analysisResult && (
@@ -249,7 +249,7 @@ function App() {
 
             <footer className="footer">
                 <div>
-                    VulnShield v1.0.0 • Automated Vulnerability Noise Reduction & Reporting System
+                    OWASP Report Analysis 
                 </div>
             </footer>
         </div>
